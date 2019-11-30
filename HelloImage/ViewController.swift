@@ -15,10 +15,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        if let image = Bundle.main.path(forResource: "test", ofType: "jpeg"){
-            muImageView.image = UIImage.init(contentsOfFile: image)
-        }
+//        if let image = Bundle.main.path(forResource: "test", ofType: "jpeg"){
+//            muImageView.image = UIImage.init(contentsOfFile: image)
+//        }
         
+        //使用資源檔
+        muImageView.image = UIImage(named: "mypic1")
     }
 
 
